@@ -1,6 +1,150 @@
-# Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JinHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-This site is brain dump of thoughts about anything which made me write. The blogs are work in progress and often incomplete and some might look senseless.
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
 
-Good luck with reading!
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            margin-bottom: 2rem;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .welcome-text {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #4b5563;
+        }
+
+        .good-luck {
+            font-style: italic;
+            color: #6366f1;
+            font-weight: 500;
+        }
+
+        .essays-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .essays-section h2 {
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        .essays-list {
+            list-style: none;
+        }
+
+        .essays-list li {
+            margin-bottom: 1rem;
+        }
+
+        .essays-list a {
+            color: #6366f1;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.2s ease;
+            display: inline-block;
+            padding: 0.5rem 0;
+        }
+
+        .essays-list a:hover {
+            color: #4f46e5;
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            header {
+                padding: 2rem 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>JinHub</h1>
+            <p class="subtitle">A collection of thoughts, ideas, and explorations</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <p class="welcome-text">
+                Welcome to my digital garden! This is a brain dump of thoughts about anything which made me write. 
+                The blogs/essays are work in progress and often incomplete, and some might look senseless - but that's the beauty 
+                of raw, unfiltered thinking.
+            </p>
+            <p class="good-luck">Happy reading and exploring! 🚀</p>
+        </div>
+
+        <div class="essays-section">
+            <h2>Essays & Thoughts</h2>
+            <ul class="essays-list">
+                <li><a href="DSA.md">Data Structures and Algorithms</a></li>
+                <li><a href="Writing.md">On Writing</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
 
