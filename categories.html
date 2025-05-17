@@ -1,0 +1,68 @@
+---
+layout: default
+title: Categories
+---
+
+<div class="categories-page">
+    <h1>Categories</h1>
+    
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}
+        <div class="category-section">
+            <h2 id="{{ category[0] | slugify }}">#{{ category[0] }}</h2>
+            <ul class="post-list">
+                {% for post in category[1] %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+</div>
+
+<style>
+.categories-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.category-section {
+    margin-bottom: 2rem;
+}
+
+.category-section h2 {
+    color: #4f46e5;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-list a {
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.post-list a:hover {
+    color: #4f46e5;
+}
+
+.post-date {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+</style> 

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Data Structures and Algorithms
+date: 2024-03-20
+categories: [Programming, Computer Science, Algorithms]
+---
+
 In my journey to know common data structures and algorithms we use and are often asked in interview questions. I started capturing my thoughts about them from a first principles perspective. This blog in its eutopian state (which it will never reach) should be enough to get you ready for the job and its interviews. This blog will have syntaxes written in python language.
 
 ## Common Data structures used:
@@ -31,3 +38,13 @@ map.pop(1) ## removes python from the map.
 ```
 
 3. **Queues** -> They are special lists. which follows FIFO principle. You can add new elements using enqueue() and remove using dequeue() 
+
+```
+
+---
+
+## Discussion
+
+Have thoughts or questions about this post? Join the discussion on GitHub!
+
+[![GitHub Discussions](https://img.shields.io/github/discussions/jinhub/jinhub.github.io?label=Join%20Discussion&style=for-the-badge)](https://github.com/jinhub/jinhub.github.io/discussions)

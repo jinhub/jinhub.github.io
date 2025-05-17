@@ -1,0 +1,64 @@
+<!-- Social Features -->
+<div class="social-features">
+    <div class="reactions">
+        <a href="https://github.com/jinhub/jinhub.github.io/discussions" class="reaction-button" title="Like this post">
+            <span class="reaction-icon">❤️</span>
+            <span class="reaction-count">0</span>
+        </a>
+    </div>
+    
+    <div class="comments">
+        <a href="https://github.com/jinhub/jinhub.github.io/discussions" class="comment-button" title="Join the discussion">
+            <span class="comment-icon">💬</span>
+            <span class="comment-text">Join Discussion</span>
+        </a>
+    </div>
+</div>
+
+<style>
+.social-features {
+    margin: 2rem 0;
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.reaction-button, .comment-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.reaction-button {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.comment-button {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+}
+
+.reaction-button:hover, .comment-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reaction-icon, .comment-icon {
+    font-size: 1.25rem;
+}
+
+.reaction-count {
+    font-weight: 500;
+}
+
+.comment-text {
+    font-weight: 500;
+}
+</style> 
